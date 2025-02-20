@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Permanent mock API with JSON Server",
   "scripts": {
-    "start": "npx json-server --watch questions.json --port 8000 --host 0.0.0.0"
+    "start": "./node_modules/.bin/json-server --watch questions.json --port $PORT --host 0.0.0.0"
   },
   "dependencies": {
     "json-server": "^0.17.4"

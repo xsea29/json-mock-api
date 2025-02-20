@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Permanent mock API with JSON Server",
   "scripts": {
+    "prestart": "chmod +x node_modules/.bin/json-server",
     "start": "npx json-server --watch questions.json --port $PORT --host 0.0.0.0"
   },
   "dependencies": {
+    "debug": "^4.4.0",
     "json-server": "^0.17.4"
   },
   "main": "index.js",
